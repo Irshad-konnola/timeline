@@ -1,0 +1,235 @@
+[
+  {
+    "year": 2008,
+    "events": [
+      {
+        "id": 1,
+        "title": "What is Lorem Ipsum?",
+        "contents": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Early Web Expansion",
+        "contents": "The late 2000s saw rapid growth of websites and online businesses...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentVideo": "/timeline/content_4.mp4"
+      }
+    ]
+  },
+  {
+    "year": 2009,
+    "events": [
+      {
+        "id": 3,
+        "title": "The Evolution of Design",
+        "contents": "Design thinking has revolutionized how we approach problem-solving...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      }
+    ]
+  },
+  {
+    "year": 2010,
+    "events": [
+      {
+        "id": 4,
+        "title": "Mobile Revolution Begins",
+        "contents": "The introduction of smartphones changed everything...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 9,
+        "title": "App Store Explosion",
+        "contents": "Mobile app marketplaces flourished, offering tools, games, and services...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Tablet Devices Rise",
+        "contents": "Apple and Android tablets brought new ways of consuming media...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Social Networking Growth",
+        "contents": "Facebook reached new heights as people shifted social interactions online...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 12,
+        "title": "HTML5 Adoption",
+        "contents": "HTML5 began reshaping how developers built web applications...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Gaming on Mobile",
+        "contents": "Titles like Angry Birds and Fruit Ninja became cultural icons...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Rise of Mobile Payments",
+        "contents": "Early solutions like Google Wallet introduced mobile-based payments...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Wearables Enter Market",
+        "contents": "Smartwatches and fitness trackers started gaining momentum...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 16,
+        "title": "4G Networks Expand",
+        "contents": "High-speed mobile internet became a standard, enabling richer apps...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Rise of Messaging Apps",
+        "contents": "WhatsApp and similar apps grew as SMS alternatives worldwide...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      }
+    ]
+  },
+  {
+    "year": 2011,
+    "events": [
+      {
+        "id": 5,
+        "title": "Rise of Social Media",
+        "contents": "Platforms like Facebook, Twitter, and Instagram redefined communication and marketing...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentVideo": "/timeline/content_5.mp4"
+      },
+      {
+        "id": 6,
+        "title": "Streaming Takes Off",
+        "contents": "YouTube and Netflix popularized on-demand streaming for the masses...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Online Shopping Surge",
+        "contents": "E-commerce boomed with Amazon and eBay leading the way...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Smartphone Wars",
+        "contents": "Apple, Samsung, and others competed fiercely in the smartphone market...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Growth of Big Data",
+        "contents": "Data-driven decisions became essential in business and technology...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Digital Advertising Expands",
+        "contents": "Brands increasingly shifted budgets to online ad campaigns...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Smart Assistants Appear",
+        "contents": "Early AI assistants like Siri brought voice control into the mainstream...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Enterprise Software Growth",
+        "contents": "Companies adopted SaaS platforms for collaboration and productivity...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      }
+    ]
+  },
+  {
+    "year": 2012,
+    "events": [
+      {
+        "id": 7,
+        "title": "Cloud Computing Era",
+        "contents": "Businesses rapidly adopted cloud solutions, enabling scalability and flexibility like never before...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Mobile-first Design",
+        "contents": "Websites began prioritizing mobile-friendly layouts...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Crowdfunding Popularity",
+        "contents": "Platforms like Kickstarter opened doors for creators to fund projects...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Digital Learning Grows",
+        "contents": "E-learning platforms expanded access to education worldwide...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Cybersecurity Awareness",
+        "contents": "Rising threats pushed organizations to invest more in cybersecurity...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Rise of Photo Sharing",
+        "contents": "Instagram and Pinterest influenced how people shared visuals online...",
+        "titlePic": "/timeline/title_3.jpg",
+        "contentPic": "/timeline/content_3.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Startups Boom",
+        "contents": "New startups emerged rapidly with venture capital fueling innovation...",
+        "titlePic": "/timeline/title_1.jpg",
+        "contentPic": "/timeline/content_1.jpg"
+      }
+    ]
+  },
+  {
+    "year": 2013,
+    "events": [
+      {
+        "id": 8,
+        "title": "AI and Automation",
+        "contents": "Artificial intelligence and automation transformed industries, from healthcare to finance...",
+        "titlePic": "/timeline/title_2.jpg",
+        "contentPic": "/timeline/content_2.jpg"
+      }
+    ]
+  }
+]
