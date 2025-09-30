@@ -5,14 +5,18 @@
       {
         "id": 1,
         "title": "What is Lorem Ipsum?",
-        "contents": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        "titleLocLang": "ما هو لوريم إيبسوم؟",
+        "contents": "Lorem Ipsum is simply dummy text of the printing and typesetting industry printing and typesetting industry...",
+        "contentLocLang": "لوريم إيبسوم هو ببساطة نص شكلي يستخدم في صناعة الطباعة والتنضيد...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 2,
         "title": "Early Web Expansion",
-        "contents": "The late 2000s saw rapid growth of websites and online businesses...",
+        "titleLocLang": "التوسع المبكر للويب",
+        "contents": "The late 2000s saw rapid growth of websites and online businesses that was a good innovation for technology...",
+        "contentLocLang": "شهدت أواخر العقد الأول من القرن الحادي والعشرين نموًا سريعًا للمواقع الإلكترونية والشركات عبر الإنترنت الذي كان ابتكارًا جيدًا للتكنولوجيا...",
         "titlePic": "/timeline/title_2.jpg",
         "contentVideo": "/timeline/content_4.mp4"
       }
@@ -24,7 +28,9 @@
       {
         "id": 3,
         "title": "The Evolution of Design",
-        "contents": "Design thinking has revolutionized how we approach problem-solving...",
+        "titleLocLang": "تطور التصميم",
+        "contents": "Design thinking has revolutionized how we approach problem-solving in creative industries worldwide...",
+        "contentLocLang": "أحدث التفكير التصميمي ثورة في كيفية تناولنا لحل المشكلات في الصناعات الإبداعية حول العالم...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       }
@@ -36,70 +42,90 @@
       {
         "id": 4,
         "title": "Mobile Revolution Begins",
-        "contents": "The introduction of smartphones changed everything...",
+        "titleLocLang": "بداية الثورة المحمولة",
+        "contents": "The introduction of smartphones changed everything about how people communicate daily...",
+        "contentLocLang": "غيّر ظهور الهواتف الذكية كل شيء يتعلق بكيفية تواصل الناس يوميًا...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 9,
         "title": "App Store Explosion",
-        "contents": "Mobile app marketplaces flourished, offering tools, games, and services...",
+        "titleLocLang": "انفجار متجر التطبيقات",
+        "contents": "Mobile app marketplaces flourished, offering tools, games, and services for everyone worldwide...",
+        "contentLocLang": "ازدهرت أسواق تطبيقات الهواتف المحمولة، حيث قدمت أدوات وألعابًا وخدمات للجميع في جميع أنحاء العالم...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 10,
         "title": "Tablet Devices Rise",
-        "contents": "Apple and Android tablets brought new ways of consuming media...",
+        "titleLocLang": "صعود أجهزة اللوحية",
+        "contents": "Apple and Android tablets brought new ways of consuming media and digital content...",
+        "contentLocLang": "أتاحت أجهزة آبل وأندرويد اللوحية طرقًا جديدة لاستهلاك الوسائط والمحتوى الرقمي...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 11,
         "title": "Social Networking Growth",
-        "contents": "Facebook reached new heights as people shifted social interactions online...",
+        "titleLocLang": "نمو الشبكات الاجتماعية",
+        "contents": "Facebook reached new heights as people shifted social interactions online completely...",
+        "contentLocLang": "بلغ الفيسبوك آفاقًا جديدة مع تحول التفاعلات الاجتماعية إلى الإنترنت بشكل كامل...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 12,
         "title": "HTML5 Adoption",
-        "contents": "HTML5 began reshaping how developers built web applications...",
+        "titleLocLang": "اعتماد HTML5",
+        "contents": "HTML5 began reshaping how developers built web applications and interactive sites...",
+        "contentLocLang": "بدأت HTML5 بإعادة تشكيل طريقة بناء المطورين للتطبيقات والمواقع التفاعلية على الويب...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 13,
         "title": "Gaming on Mobile",
-        "contents": "Titles like Angry Birds and Fruit Ninja became cultural icons...",
+        "titleLocLang": "الألعاب على الهواتف المحمولة",
+        "contents": "Titles like Angry Birds and Fruit Ninja became cultural icons across the globe...",
+        "contentLocLang": "أصبحت عناوين مثل Angry Birds و Fruit Ninja أيقونات ثقافية في جميع أنحاء العالم...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 14,
         "title": "Rise of Mobile Payments",
-        "contents": "Early solutions like Google Wallet introduced mobile-based payments...",
+        "titleLocLang": "صعود المدفوعات عبر الهاتف المحمول",
+        "contents": "Early solutions like Google Wallet introduced mobile-based payments securely and conveniently...",
+        "contentLocLang": "قدمت الحلول المبكرة مثل محفظة جوجل المدفوعات القائمة على الهاتف المحمول بأمان وسهولة...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 15,
         "title": "Wearables Enter Market",
-        "contents": "Smartwatches and fitness trackers started gaining momentum...",
+        "titleLocLang": "الأجهزة القابلة للارتداء تدخل السوق",
+        "contents": "Smartwatches and fitness trackers started gaining momentum globally among consumers...",
+        "contentLocLang": "بدأت الساعات الذكية وأجهزة تتبع اللياقة البدنية تكتسب زخمًا على مستوى العالم بين المستهلكين...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 16,
         "title": "4G Networks Expand",
-        "contents": "High-speed mobile internet became a standard, enabling richer apps...",
+        "titleLocLang": "توسع شبكات الجيل الرابع",
+        "contents": "High-speed mobile internet became a standard, enabling richer apps everywhere quickly...",
+        "contentLocLang": "أصبح الإنترنت móvil عالي السرعة معيارًا، مما مكن من تطبيقات أكثر ثراءً في كل مكان بسرعة...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 17,
         "title": "Rise of Messaging Apps",
-        "contents": "WhatsApp and similar apps grew as SMS alternatives worldwide...",
+        "titleLocLang": "صعود تطبيقات المراسلة",
+        "contents": "WhatsApp and similar apps grew as SMS alternatives worldwide very rapidly...",
+        "contentLocLang": "نمت تطبيقات مثل واتساب كبدائل للرسائل القصيرة في جميع أنحاء العالم بسرعة كبيرة...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       }
@@ -111,56 +137,72 @@
       {
         "id": 5,
         "title": "Rise of Social Media",
-        "contents": "Platforms like Facebook, Twitter, and Instagram redefined communication and marketing...",
+        "titleLocLang": "صعود وسائل التواصل الاجتماعي",
+        "contents": "Platforms like Facebook, Twitter, and Instagram redefined communication and marketing strategies globally...",
+        "contentLocLang": "أعادت منصات مثل الفيسبوك وتويتر وإنستغرام تعريف الاستراتيجيات التواصلية والتسويقية على مستوى العالم...",
         "titlePic": "/timeline/title_2.jpg",
         "contentVideo": "/timeline/content_5.mp4"
       },
       {
         "id": 6,
         "title": "Streaming Takes Off",
-        "contents": "YouTube and Netflix popularized on-demand streaming for the masses...",
+        "titleLocLang": "انطلاق البث المباشر",
+        "contents": "YouTube and Netflix popularized on-demand streaming for the masses around the world...",
+        "contentLocLang": "شَعَّبَ يوتيوب ونيتفليكس البث حسب الطلب للجماهير في جميع أنحاء العالم...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 18,
         "title": "Online Shopping Surge",
-        "contents": "E-commerce boomed with Amazon and eBay leading the way...",
+        "titleLocLang": "طفرة التسوق عبر الإنترنت",
+        "contents": "E-commerce boomed with Amazon and eBay leading the way forward significantly...",
+        "contentLocLang": "ازدهر التجارة الإلكترونية مع قيادة أمازون وإيبي الطريق إلى الأمام بشكل ملحوظ...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 19,
         "title": "Smartphone Wars",
-        "contents": "Apple, Samsung, and others competed fiercely in the smartphone market...",
+        "titleLocLang": "حروب الهواتف الذكية",
+        "contents": "Apple, Samsung, and others competed fiercely in the smartphone market globally intensely...",
+        "contentLocLang": "تنافست آبل وسامسونج وآخرون بشدة في سوق الهواتف الذكية على مستوى العالم...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 20,
         "title": "Growth of Big Data",
-        "contents": "Data-driven decisions became essential in business and technology...",
+        "titleLocLang": "نمو البيانات الضخمة",
+        "contents": "Data-driven decisions became essential in business and technology sectors worldwide...",
+        "contentLocLang": "أصبحت القرارات القائمة على البيانات ضرورية في قطاعات الأعمال والتكنولوجيا في جميع أنحاء العالم...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 21,
         "title": "Digital Advertising Expands",
-        "contents": "Brands increasingly shifted budgets to online ad campaigns...",
+        "titleLocLang": "توسع الإعلان الرقمي",
+        "contents": "Brands increasingly shifted budgets to online ad campaigns significantly and strategically...",
+        "contentLocLang": "حوّلت العلامات التجارية ميزانياتها بشكل متزايد إلى الحملات الإعلانية عبر الإنترنت بشكل كبير واستراتيجي...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 22,
         "title": "Smart Assistants Appear",
-        "contents": "Early AI assistants like Siri brought voice control into the mainstream...",
+        "titleLocLang": "ظهور المساعدات الذكية",
+        "contents": "Early AI assistants like Siri brought voice control into the mainstream successfully and effectively...",
+        "contentLocLang": "أدخلت المساعدات الذكية المبكرة مثل سيري التحكم الصوتي إلى التيار الرئيسي بنجاح وفعالية...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 23,
         "title": "Enterprise Software Growth",
-        "contents": "Companies adopted SaaS platforms for collaboration and productivity...",
+        "titleLocLang": "نمو برامج المؤسسات",
+        "contents": "Companies adopted SaaS platforms for collaboration and productivity enhancement globally...",
+        "contentLocLang": "اعتمدت الشركات منصات البرنامج كخدمة (SaaS) لتعزيز التعاون والإنتاجية على مستوى العالم...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       }
@@ -172,49 +214,63 @@
       {
         "id": 7,
         "title": "Cloud Computing Era",
-        "contents": "Businesses rapidly adopted cloud solutions, enabling scalability and flexibility like never before...",
+        "titleLocLang": "عصر الحوسبة السحابية",
+        "contents": "Businesses rapidly adopted cloud solutions, enabling scalability and flexibility like never before possible...",
+        "contentLocLang": "اعتمدت الشركات بسرعة حلول الحوسبة السحابية، مما أتاح قابلية التوسع والمرونة كما لم يكن ممكنًا من قبل...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 24,
         "title": "Mobile-first Design",
-        "contents": "Websites began prioritizing mobile-friendly layouts...",
+        "titleLocLang": "تصميم Mobile-first",
+        "contents": "Websites began prioritizing mobile-friendly layouts and user experiences consistently...",
+        "contentLocLang": "بدأت المواقع الإلكترونية في إعطاء الأولوية للتخطيطات والتجاربالمصممة للهاتف المحمول باستمرار...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 25,
         "title": "Crowdfunding Popularity",
-        "contents": "Platforms like Kickstarter opened doors for creators to fund projects...",
+        "titleLocLang": "شعبية التمويل الجماعي",
+        "contents": "Platforms like Kickstarter opened doors for creators to fund projects easily and effectively...",
+        "contentLocLang": "فتحت منصات مثل كيك ستارتر الأبواب للمبدعين لتمويل مشاريعهم بسهولة وفعالية...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 26,
         "title": "Digital Learning Grows",
-        "contents": "E-learning platforms expanded access to education worldwide...",
+        "titleLocLang": "نمو التعلم الرقمي",
+        "contents": "E-learning platforms expanded access to education worldwide effectively and affordably...",
+        "contentLocLang": "وسعت منصات التعلم الإلكتروني الوصول إلى التعليم في جميع أنحاء العالم بشكل فعال وبأسعار معقولة...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       },
       {
         "id": 27,
         "title": "Cybersecurity Awareness",
-        "contents": "Rising threats pushed organizations to invest more in cybersecurity...",
+        "titleLocLang": "الوعي بالأمن السيبراني",
+        "contents": "Rising threats pushed organizations to invest more in cybersecurity measures proactively...",
+        "contentLocLang": "دفعت التهديدات المتزايدة المنظمات إلى الاستثمار بشكل استباقي أكثر في تدابير الأمن السيبراني...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       },
       {
         "id": 28,
         "title": "Rise of Photo Sharing",
-        "contents": "Instagram and Pinterest influenced how people shared visuals online...",
+        "titleLocLang": "صعود مشاركة الصور",
+        "contents": "Instagram and Pinterest influenced how people shared visuals online creatively and socially...",
+        "contentLocLang": "أثر إنستغرام وبينتيريست على كيفية مشاركة الأشخاص للمواد البصرية عبر الإنترنت بشكل إبداعي واجتماعي...",
         "titlePic": "/timeline/title_3.jpg",
         "contentPic": "/timeline/content_3.jpg"
       },
       {
         "id": 29,
         "title": "Startups Boom",
-        "contents": "New startups emerged rapidly with venture capital fueling innovation...",
+        "titleLocLang": "طفرة الشركات الناشئة",
+        "contents": "New startups emerged rapidly with venture capital fueling innovation greatly and continuously...",
+        "contentLocLang": "ظهرت شركات ناشئة جديدة بسرعة مع رأس المال الاستثماري الذي غذى الابتكار بشكل كبير ومستمر...",
         "titlePic": "/timeline/title_1.jpg",
         "contentPic": "/timeline/content_1.jpg"
       }
@@ -226,7 +282,9 @@
       {
         "id": 8,
         "title": "AI and Automation",
-        "contents": "Artificial intelligence and automation transformed industries, from healthcare to finance...",
+        "titleLocLang": "الذكاء الاصطناعي والأتمتة",
+        "contents": "Artificial intelligence and automation transformed industries, from healthcare to finance sectors globally...",
+        "contentLocLang": "حوّل الذكاء الاصطناعي والأتمتة الصناعات، من الرعاية الصحية إلى قطاعات التمويل على مستوى العالم...",
         "titlePic": "/timeline/title_2.jpg",
         "contentPic": "/timeline/content_2.jpg"
       }
