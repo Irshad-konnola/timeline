@@ -13,7 +13,7 @@ const YearGroup = ({ year, events, yearIndex, onItemClick, isEvenYear,currentLan
       
       {/* Year label */}
       <div
-        className={`absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent px-3 py-1 z-10 ${
+        className={`absolute left-1/2 transform -translate-x-1/2 text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent px-3 py-1 z-10 ${
           isEvenYear ? "bottom-20" : "top-20"
         }`}
       >
@@ -23,10 +23,10 @@ const YearGroup = ({ year, events, yearIndex, onItemClick, isEvenYear,currentLan
       {/* Events container */}
       <div
         className={`absolute left-1/2 transform -translate-x-1/2 ${
-          isEvenYear ? "bottom-full mb-24" : "top-full mt-24"
+          isEvenYear ? "bottom-full mb-32" : "top-full mt-32"
         } ${!isExpanded ? "hidden" : ""}`}
       >
-        <div className="max-h-[500px] overflow-y-auto no-scrollbar space-y-4 px-2">
+        <div className="max-h-[500px] overflow-y-auto  space-y-4 px-2 custom-scrollbar-minimal">
           {orderedEvents.map((event, eventIndex) => (
             <EventCard
               key={event.id}

@@ -7,13 +7,19 @@ export default {
   ],
   theme: {
   	extend: {
-  		container: {
-  			center: true,
-  			padding: '1rem',
-  			screens: {
-  				'2xl': '1600px'
-  			}
-  		},
+  container: {
+    center: true,
+    padding: '1rem',
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1600px',   
+      '3xl': '1920px',   
+      '4xl': '2300px',   
+    },
+  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -21,7 +21,7 @@ const EventCard = ({ event, eventIndex, totalEvents, onItemClick, isEvenYear, cu
   };
 
   return (
-    <div className={`relative ${!isLastEvent ? "mb-8" : ""}`}>
+    <div className={`relative ${!isLastEvent ? "mb-8" : ""} `}>
       {!isLastEvent && (
         <div className="absolute left-1/2 top-full transform -translate-x-1/2 w-0.5 h-8 bg-gradient-to-b from-purple-500 to-indigo-500"></div>
       )}
