@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import YearGroup from "./YearGroup";
-import timelineData from "../timelineData.json"; // remove this file if using api call for data fetching
+import timelineData from "../timeLineData.json"; // remove this file if using api call for data fetching
 
 const TimelineSection = ({ onItemClick, currentLanguage }) => {
   const [currentTimelineData, setCurrentTimelineData] = useState(timelineData);
