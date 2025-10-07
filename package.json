@@ -3,9 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prebuild": "echo 'Current directory:' && pwd && echo 'Files:' && ls -la",
     "lint": "eslint .",
     "preview": "vite preview"
   },
