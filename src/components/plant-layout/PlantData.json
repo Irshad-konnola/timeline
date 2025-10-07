@@ -1,0 +1,134 @@
+{
+  "plantData": [
+    {
+      "id": 1,
+      "title": "Central Control Room",
+      "titleLocLang": "غرفة التحكم المركزية",
+      "description": "The main control and monitoring hub for the entire plant operations. Features advanced SCADA systems and real-time monitoring dashboards for optimal process control and safety management.",
+      "descriptionLocLang": "المركز الرئيسي للتحكم والمراقبة لجميع عمليات المصنع. يحتوي على أنظمة SCADA متقدمة ولوحات مراقبة في الوقت الفعلي لضمان التحكم الأمثل في العمليات وإدارة السلامة.",
+      "descriptionDetail": "This area houses the core operation systems of the plant. Operators monitor process parameters, alarms, and performance metrics. Equipped with redundant communication and power systems to ensure uninterrupted plant operation.",
+      "descriptionDetailLocLang": "تحتوي هذه المنطقة على أنظمة التشغيل الأساسية للمصنع. يقوم المشغلون بمراقبة معلمات العملية والإنذارات ومؤشرات الأداء. مزودة بأنظمة اتصالات وطاقة احتياطية لضمان تشغيل المصنع دون انقطاع.",
+      "contentPics": [
+        "/media/content_media/content_1.jpg",
+        "/media/content_media/content_2.jpg",
+        "/media/content_media/content_3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tank Farm",
+      "titleLocLang": "منطقة الخزانات",
+      "description": "Primary storage area for raw materials and finished products with modern safety and inventory management systems.",
+      "descriptionLocLang": "منطقة التخزين الرئيسية للمواد الخام والمنتجات النهائية مزودة بأنظمة سلامة وإدارة مخزون حديثة.",
+      "descriptionDetail": "The tank farm includes insulated and pressurized tanks equipped with automated level sensors, temperature controls, and fire protection systems. It ensures safe handling and efficient logistics of liquids and gases.",
+      "descriptionDetailLocLang": "تتضمن منطقة الخزانات خزانات معزولة ومضغوطة مزودة بأجهزة استشعار مستوى تلقائية، وتحكم في درجة الحرارة، وأنظمة حماية من الحرائق لضمان التعامل الآمن واللوجستيات الفعالة للسوائل والغازات.",
+      "contentVideos": [
+        "/media/content_media/content_4.mp4",
+        "/media/content_media/content_5.mp4"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Feed Gas Processing",
+      "titleLocLang": "معالجة غاز التغذية",
+      "description": "Handles purification and conditioning of incoming feed gas for downstream processing.",
+      "descriptionLocLang": "يتعامل مع تنقية وتحضير غاز التغذية الداخل للمعالجة اللاحقة.",
+      "descriptionDetail": "The feed gas processing unit removes impurities such as water, CO₂, and sulfur compounds before sending the gas to compression and liquefaction. This step ensures product quality and equipment longevity.",
+      "descriptionDetailLocLang": "تقوم وحدة معالجة غاز التغذية بإزالة الشوائب مثل الماء وثاني أكسيد الكربون ومركبات الكبريت قبل إرسال الغاز إلى وحدات الضغط والتسييل. تضمن هذه الخطوة جودة المنتج وطول عمر المعدات.",
+      "contentPics": [
+        "/media/content_media/content_1.jpg",
+        "/media/content_media/content_3.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Compressor Station",
+      "titleLocLang": "محطة الضواغط",
+      "description": "Compresses process gases to required pressure levels for transportation and liquefaction.",
+      "descriptionLocLang": "يضغط الغازات العملية إلى مستويات الضغط المطلوبة للنقل والتسييل.",
+      "descriptionDetail": "This section includes high-capacity centrifugal and reciprocating compressors driven by electric or gas turbine engines. Advanced vibration monitoring ensures smooth and safe operation.",
+      "descriptionDetailLocLang": "تتضمن هذه المنطقة ضواغط طرد مركزي وضواغط ترددية ذات سعة عالية تعمل بواسطة محركات كهربائية أو توربينات غازية. يضمن نظام مراقبة الاهتزاز المتقدم التشغيل السلس والآمن.",
+      "contentVideos": [
+        "/media/content_media/content_5.mp4"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Cryogenic Heat Exchanger",
+      "titleLocLang": "مبادل حراري مبرد",
+      "description": "Facilitates the heat exchange process for gas liquefaction under extremely low temperatures.",
+      "descriptionLocLang": "يسهل عملية تبادل الحرارة لتسييل الغاز في درجات حرارة منخفضة للغاية.",
+      "descriptionDetail": "The cryogenic exchanger uses aluminum plate-fin technology to maximize efficiency. It enables high-pressure gas cooling while maintaining structural integrity and energy optimization.",
+      "descriptionDetailLocLang": "يستخدم المبادل الحراري المبرد تقنية الألواح الزعنفية المصنوعة من الألمنيوم لتعظيم الكفاءة. يتيح تبريد الغاز عالي الضغط مع الحفاظ على السلامة الهيكلية وتحسين استهلاك الطاقة.",
+      "contentPics": [
+        "/media/content_media/content_2.jpg",
+        "/media/content_media/content_3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Refrigeration Unit",
+      "titleLocLang": "وحدة التبريد",
+      "description": "Provides the necessary cooling power for the liquefaction process through multiple refrigeration cycles.",
+      "descriptionLocLang": "توفر طاقة التبريد اللازمة لعملية التسييل من خلال دورات تبريد متعددة.",
+      "descriptionDetail": "This unit operates mixed refrigerant systems to maintain cryogenic conditions. Compressors, heat exchangers, and expanders work in tandem to achieve desired cooling stages.",
+      "descriptionDetailLocLang": "تعمل هذه الوحدة بأنظمة تبريد مختلطة للحفاظ على الظروف المبردة. تعمل الضواغط والمبادلات الحرارية والموسعات معًا لتحقيق مراحل التبريد المطلوبة.",
+      "contentVideos": [
+        "/media/content_media/content_4.mp4",
+        "/media/content_media/content_5.mp4"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "LNG Storage & Loading",
+      "titleLocLang": "تخزين وتحميل الغاز الطبيعي المسال",
+      "description": "Stores liquefied natural gas and manages its safe loading for export via pipelines or tankers.",
+      "descriptionLocLang": "يقوم بتخزين الغاز الطبيعي المسال وإدارة تحميله الآمن للتصدير عبر خطوط الأنابيب أو الناقلات.",
+      "descriptionDetail": "The LNG storage tanks are cryogenic double-walled vessels designed to maintain extremely low temperatures. Loading arms and safety interlocks ensure efficient and secure product transfer.",
+      "descriptionDetailLocLang": "تعد خزانات تخزين الغاز الطبيعي المسال أوعية مبردة مزدوجة الجدران مصممة للحفاظ على درجات حرارة منخفضة للغاية. تضمن أذرع التحميل وأنظمة الأمان النقل الفعال والآمن للمنتج.",
+      "contentPics": [
+        "/media/content_media/content_1.jpg",
+        "/media/content_media/content_2.jpg",
+        "/media/content_media/content_3.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Utility & Power Generation",
+      "titleLocLang": "المرافق وتوليد الطاقة",
+      "description": "Provides essential utilities like power, water, and steam for the entire plant operation.",
+      "descriptionLocLang": "يوفر المرافق الأساسية مثل الطاقة والمياه والبخار لتشغيل المصنع بالكامل.",
+      "descriptionDetail": "The utility section includes gas turbines, boilers, and water treatment systems. Designed for high reliability and energy efficiency to ensure continuous plant support.",
+      "descriptionDetailLocLang": "تتضمن منطقة المرافق توربينات غازية وغلايات وأنظمة معالجة مياه. تم تصميمها لضمان موثوقية عالية وكفاءة في استهلاك الطاقة لتوفير دعم مستمر للمصنع.",
+      "contentVideos": [
+        "/media/content_media/content_5.mp4"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Flare System",
+      "titleLocLang": "نظام الشعلة",
+      "description": "Safely burns off excess gases to maintain pressure balance and prevent hazardous releases.",
+      "descriptionLocLang": "يحرق الغازات الزائدة بأمان للحفاظ على توازن الضغط ومنع الانبعاثات الخطرة.",
+      "descriptionDetail": "The flare stack operates under strict safety and environmental controls. Equipped with pilots, ignition systems, and knock-out drums to ensure controlled combustion.",
+      "descriptionDetailLocLang": "يعمل نظام الشعلة تحت ضوابط سلامة وبيئية صارمة. مزود بطيارين وأنظمة إشعال وفواصل سائلة لضمان الاحتراق المنضبط.",
+      "contentPics": [
+        "/media/content_media/content_1.jpg",
+        "/media/content_media/content_3.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Administration & Maintenance Area",
+      "titleLocLang": "منطقة الإدارة والصيانة",
+      "description": "Hosts administrative offices, workshops, and maintenance facilities for plant operations.",
+      "descriptionLocLang": "تستضيف المكاتب الإدارية وورش العمل ومرافق الصيانة الخاصة بعمليات المصنع.",
+      "descriptionDetail": "This area ensures smooth management, planning, and upkeep of the plant. It includes control offices, spare parts storage, and equipment diagnostic centers.",
+      "descriptionDetailLocLang": "تضمن هذه المنطقة إدارة وتخطيط وصيانة سلسة للمصنع. وتشمل مكاتب التحكم ومستودعات قطع الغيار ومراكز تشخيص المعدات.",
+      "contentVideos": [
+        "/media/content_media/content_4.mp4",
+        "/media/content_media/content_5.mp4"
+      ]
+    }
+  ]
+}

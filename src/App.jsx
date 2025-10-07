@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import TimelineSection from "./components/TimelineSection";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
-import './App.css';
+import PlantLayout from "./components/plant-layout/PlantLayout";
+import "./App.css";
 import timelineData from "./timelineData.json"; // remove this if using api for fetching
 const App = () => {
   const [selectedItem, setSelectedItem] = useState(null);
-  const [currentLanguage, setCurrentLanguage] = useState('en'); 
+  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   // const [logo, setLogo] = useState(null) state to store api data
 
-// data fetching using api call
+  // data fetching using api call
   // useEffect(() => {
   //   const fetchTimelineData = async () => {
   //     try {
@@ -34,19 +36,38 @@ const App = () => {
 
   return (
     <div className="min-h-screen">
-      <Header currentLanguage={currentLanguage} 
-        setCurrentLanguage={setCurrentLanguage}
-        institutionLogos={timelineData.institutionLogos}  // institutionLogos={logo.institutionLogos}
-        />
-      <TimelineSection 
-        onItemClick={setSelectedItem} 
-        currentLanguage={currentLanguage} 
-      />
-      <Footer />
-      <Modal 
-        item={selectedItem} 
-        onClose={() => setSelectedItem(null)} 
+      <Header
         currentLanguage={currentLanguage}
+        setCurrentLanguage={setCurrentLanguage}
+        institutionLogos={timelineData.institutionLogos}
+      />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <TimelineSection
+                onItemClick={setSelectedItem}
+                currentLanguage={currentLanguage}
+              />
+
+              <Modal
+                item={selectedItem}
+                onClose={() => setSelectedItem(null)}
+                currentLanguage={currentLanguage}
+              />
+            </>
+          }
+        />
+        <Route
+          path="/plant-layout"
+          element={<PlantLayout currentLanguage={currentLanguage} />}
+        />{" "}
+      </Routes>
+      <Footer
+        currentLanguage={currentLanguage}
+        setCurrentLanguage={setCurrentLanguage}
       />
     </div>
   );

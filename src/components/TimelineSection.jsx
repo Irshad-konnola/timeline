@@ -1,167 +1,16 @@
-// import React, { useState } from "react";
-// import YearGroup from "./YearGroup";
-// import timelineData from "../timelineData.json";
-// import TimelineForm from "./TimelineForm";
-// import { Button } from "./ui/button";
-// import { Edit, Languages } from "lucide-react";
 
-// const TimelineSection = ({ onItemClick, currentLanguage, setCurrentLanguage }) => {
-//   const [currentTimelineData, setCurrentTimelineData] = useState(timelineData);
-//   const [editingYear, setEditingYear] = useState(null);
-//   const [isAddFormOpen, setIsAddFormOpen] = useState(false);
 
-//   const maxEventsInYear = Math.max(...currentTimelineData.map(year => year.events.length));
-
-//   const cardHeight = 220;
-//   const gapBetweenCards = 32;
-//   const yearLabelSpace = 80;
-//   const connectorLineHeight = 96;
-//   const safetyMargin = 20;
-
-//   const totalCardsHeight = (cardHeight * 2);
-//   const topPadding = yearLabelSpace + connectorLineHeight + totalCardsHeight + safetyMargin;
-
-//   const getYearData = (year) => {
-//     return currentTimelineData.find(item => item.year === year);
-//   };
-
-//   const handleEditClose = () => {
-//     setEditingYear(null);
-//   };
-
-//   const toggleLanguage = () => {
-//     setCurrentLanguage(currentLanguage === 'en' ? 'ar' : 'en');
-//   };
-
-//   return (
-//     <section id="timeline-section" className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-indigo-50 py-20">
-//       <div className="container mx-auto px-4">
-//         <div className="flex items-start   justify-between mb-16">
-//           <div>
-//             <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent text-left">
-//               Shell Qatar
-//             </h2>
-//             <p className="text-xl text-gray-600 max-w-2xl text-left">
-//               Navigate through the milestones that shaped our story
-//             </p>
-//           </div>
-
-//           <div className="flex  items-center gap-4">
-//             {/* Language Toggle Button */}
-//             <Button
-//               onClick={toggleLanguage}
-//               variant="outline"
-//               className="flex items-center gap-2"
-//             >
-//               <Languages className="w-4 h-4" />
-//               {currentLanguage === 'en' ? 'العربية' : 'English'}
-//             </Button>
-// <div>
-//  <Button className="group/btn bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:shadow-lg transition-all duration-300 inline-flex items-center gap-2">
-//               <Edit className="w-4 h-4 mr-2" />
-//               Update Timeline
-//             </Button>
-// </div>
-//             {/* Add Form button */}
-//             {/* <div className="flex-shrink-0">
-//               <TimelineForm
-//                 timelineData={currentTimelineData}
-//                 setTimelineData={setCurrentTimelineData}
-//                 onClose={() => setIsAddFormOpen(false)}
-//                 currentLanguage={currentLanguage}
-//               />
-//             </div> */}
-//           </div>
-//         </div>
-
-//         <div
-//           className="relative overflow-x-auto overflow-y-visible"
-//           style={{
-//             paddingTop: `${topPadding}px`,
-//             paddingBottom: `${topPadding}px`
-//           }}
-//         >
-//           <div
-//             className="flex items-center relative mx-auto"
-//             style={{ width: `${currentTimelineData.length * 320}px` }}
-//           >
-//             <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform -translate-y-1/2 shadow-lg"></div>
-
-//             {currentTimelineData.map((yearBlock, index) => (
-//               <div key={yearBlock.year} className="relative group">
-//                 <YearGroup
-//                   year={yearBlock.year}
-//                   events={yearBlock.events}
-//                   yearIndex={index}
-//                   onItemClick={onItemClick}
-//                   isEvenYear={index % 2 === 0}
-//                   currentLanguage={currentLanguage}
-//                 />
-
-//                 {/* More events notification */}
-//                 {yearBlock.events.length > 2 && (
-//                   <div className={`absolute left-1/2 transform -translate-x-1/2 ${
-//                     index % 2 === 0
-//                       ? 'top-[calc(100%+10px)]'
-//                       : 'bottom-[calc(100%+10px)]'
-//                   }`}>
-//                     <div className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg flex items-center gap-1 animate-pulse">
-//                       <span>
-//                         {currentLanguage === 'en'
-//                           ? `+${yearBlock.events.length - 2} more`
-//                           : `+${yearBlock.events.length - 2} المزيد`
-//                         }
-//                       </span>
-//                     </div>
-//                     {/* Arrow indicator */}
-//                     <div className={`absolute left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-transparent ${
-//                       index % 2 === 0
-//                         ? 'border-t-4 border-t-indigo-600 -top-1'
-//                         : 'border-b-4 border-b-indigo-600 -bottom-1'
-//                     }`}></div>
-//                   </div>
-//                 )}
-
-//                 {/* Edit button - separate from the form */}
-//                 <button
-//                   onClick={() => setEditingYear(yearBlock.year)}
-//                   className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-white rounded-full p-2 shadow-md hover:bg-gray-100"
-//                 >
-//                   <Edit className="w-4 h-4 text-gray-600" />
-//                 </button>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-
-//         {/* Edit Form - rendered separately */}
-//         {/* {editingYear && (
-//           <TimelineForm
-//             timelineData={currentTimelineData}
-//             setTimelineData={setCurrentTimelineData}
-//             editData={getYearData(editingYear)}
-//             onClose={handleEditClose}
-//             currentLanguage={currentLanguage}
-//           />
-//         )} */}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default TimelineSection;
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import YearGroup from "./YearGroup";
 import timelineData from "../timelineData.json"; // remove this file if using api call for data fetching
 
 const TimelineSection = ({ onItemClick, currentLanguage }) => {
-  const [currentTimelineData, setCurrentTimelineData] = useState(timelineData); //   const [currentTimelineData, setCurrentTimelineData] = useState(null);
-
+  const [currentTimelineData, setCurrentTimelineData] = useState(timelineData);
   const [editingYear, setEditingYear] = useState(null);
-
-  // const maxEventsInYear = Math.max(
-  //   ...currentTimelineData.map((year) => year.events.length)
-  // );
+  const containerRef = useRef(null);
+  const animationRef = useRef(null);
+  const scrollPositionRef = useRef(0);
+  const directionRef = useRef(1); // 1 for right, -1 for left
 
   const cardHeight = 220;
   const gapBetweenCards = 32;
@@ -173,52 +22,160 @@ const TimelineSection = ({ onItemClick, currentLanguage }) => {
   const topPadding =
     yearLabelSpace + connectorLineHeight + totalCardsHeight + safetyMargin;
 
-  // const getYearData = (year) => {
-  //   return currentTimelineData.find((item) => item.year === year);
-  // };
-
-  //  useEffect(() => {
-  //   const fetchTimelineData = async () => {
-  //     try {
-  //       // Replace this URL with currect url
-  //       const response = await fetch("https://example.com/api/timeline");
-  //       if (!response.ok) {
-  //         throw new Error("Failed to fetch timeline data");
-  //       }
-  //       const data = await response.json();
-  //       setCurrentTimelineData(data);
-  //     } catch (error) {
-  //       console.error("Error fetching timeline data:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchTimelineData();
-  // }, []);
-
   const handleEditClose = () => {
     setEditingYear(null);
   };
 
+  // Initial vertical center scroll to show timeline
+  useEffect(() => {
+    const section = document.getElementById("timeline-section");
+    if (!section) return;
+
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const scrollTo =
+      sectionTop + sectionHeight / 2 - windowHeight / 2;
+
+    window.scrollTo({
+      top: scrollTo,
+      behavior: "smooth",
+    });
+  }, []);
+
+  // Auto-scroll animation
+  // useEffect(() => {
+  //   const container = containerRef.current;
+  //   if (!container || !currentTimelineData?.timeline) return;
+
+  //   const scrollSpeed = 0.5; 
+  //   const maxScroll = container.scrollWidth - container.clientWidth;
+
+  //   const animateScroll = () => {
+  //     if (directionRef.current === 1) {
+  //       scrollPositionRef.current += scrollSpeed;
+  //       if (scrollPositionRef.current >= maxScroll) {
+  //         scrollPositionRef.current = maxScroll;
+  //         directionRef.current = -1;
+  //       }
+  //     } else {
+  //       scrollPositionRef.current -= scrollSpeed;
+  //       if (scrollPositionRef.current <= 0) {
+  //         scrollPositionRef.current = 0;
+  //         directionRef.current = 1;
+  //       }
+  //     }
+
+  //     container.scrollLeft = scrollPositionRef.current;
+  //     animationRef.current = requestAnimationFrame(animateScroll);
+  //   };
+
+  //   const timeoutId = setTimeout(() => {
+  //     animationRef.current = requestAnimationFrame(animateScroll);
+  //   }, 100);
+
+  //   return () => {
+  //     clearTimeout(timeoutId);
+  //     if (animationRef.current) {
+  //       cancelAnimationFrame(animationRef.current);
+  //     }
+  //   };
+  // }, [currentTimelineData]);
+// Auto-scroll animation with pause on user interaction
+useEffect(() => {
+  const container = containerRef.current;
+  if (!container || !currentTimelineData?.timeline) return;
+
+  const scrollSpeed = 0.5; 
+  const maxScroll = container.scrollWidth - container.clientWidth;
+
+  let isPaused = false;
+
+  const animateScroll = () => {
+    if (!isPaused) {
+      if (directionRef.current === 1) {
+        scrollPositionRef.current += scrollSpeed;
+        if (scrollPositionRef.current >= maxScroll) {
+          scrollPositionRef.current = maxScroll;
+          directionRef.current = -1;
+        }
+      } else {
+        scrollPositionRef.current -= scrollSpeed;
+        if (scrollPositionRef.current <= 0) {
+          scrollPositionRef.current = 0;
+          directionRef.current = 1;
+        }
+      }
+
+      container.scrollLeft = scrollPositionRef.current;
+    }
+    animationRef.current = requestAnimationFrame(animateScroll);
+  };
+
+  // 👉 Pause/resume handlers
+  const pauseScroll = () => {
+    isPaused = true;
+  };
+  const resumeScroll = () => {
+    isPaused = false;
+  };
+
+  // Attach listeners
+  container.addEventListener("mousedown", pauseScroll);
+  container.addEventListener("mouseup", resumeScroll);
+  container.addEventListener("mouseleave", resumeScroll);
+  container.addEventListener("touchstart", pauseScroll, { passive: true });
+  container.addEventListener("touchend", resumeScroll);
+
+  // Kick off animation
+  animationRef.current = requestAnimationFrame(animateScroll);
+
+  return () => {
+    if (animationRef.current) cancelAnimationFrame(animationRef.current);
+    container.removeEventListener("mousedown", pauseScroll);
+    container.removeEventListener("mouseup", resumeScroll);
+    container.removeEventListener("mouseleave", resumeScroll);
+    container.removeEventListener("touchstart", pauseScroll);
+    container.removeEventListener("touchend", resumeScroll);
+  };
+}, [currentTimelineData]);
+
   return (
     <section
       id="timeline-section"
-      className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-indigo-50 py-10"
+      className="relative min-h-screen overflow-hidden"
     >
-      <div className="container mx-auto px-4 ">
+      {/* 🔹 Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/petropillar_qatar.mp4" type="video/mp4" />
+      </video>
+
+      {/* 🔹 Dark Overlay (optional for readability) */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* 🔹 Foreground Content */}
+      <div className="relative z-10 container mx-auto px-4 py-10">
         <div
-          className="relative overflow-x-auto overflow-y-visible"
+          ref={containerRef}
+          className="relative overflow-x-auto overflow-y-visible scrollbar-hide"
           style={{
             paddingTop: `${topPadding}px`,
             paddingBottom: `${topPadding}px`,
+            scrollBehavior: "auto",
           }}
         >
           <div
-            className="flex items-center relative mx-auto"
+            className="flex items-center relative mx-auto min-w-max"
             style={{ width: `${currentTimelineData?.timeline?.length * 320}px` }}
           >
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform -translate-y-1/2 shadow-lg"></div>
+            {/* Central Guide Line */}
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform -translate-y-1/2 shadow-lg z-10"></div>
 
             {currentTimelineData?.timeline?.map((yearBlock, index) => (
               <div key={yearBlock.year} className="relative group">
@@ -235,6 +192,17 @@ const TimelineSection = ({ onItemClick, currentLanguage }) => {
           </div>
         </div>
       </div>
+
+      {/* Custom scrollbar hide styles */}
+      <style jsx>{`
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </section>
   );
 };

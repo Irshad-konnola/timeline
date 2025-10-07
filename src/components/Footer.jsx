@@ -1,13 +1,25 @@
 import React from "react";
+import { Button } from "./ui/button";
+import { Languages } from "lucide-react";
+const Footer = ({currentLanguage, setCurrentLanguage}) => {
+   const toggleLanguage = () => {
+    setCurrentLanguage(currentLanguage === "en" ? "ar" : "en");
+  };
 
-const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-lg mb-2">© 2025 Timeline of Innovation</p>
-        <p className="text-indigo-200">Crafted with passion and innovation</p>
-      </div>
-    </footer>
+   <footer className="py-2 flex justify-center items-center">
+  <div className="hidden md:flex items-center gap-4">
+    <Button
+      onClick={toggleLanguage}
+      variant="outline"
+      className="flex items-center gap-2"
+    >
+      <Languages className="w-4 h-4" />
+      {currentLanguage === "en" ? "العربية" : "English"}
+    </Button>
+  </div>
+</footer>
+
   );
 };
 

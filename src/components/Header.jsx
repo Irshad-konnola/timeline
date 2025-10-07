@@ -8,15 +8,22 @@ import {
   DialogTitle,
   DialogDescription,
 } from "./ui/dialog";
-
+import { useNavigate } from "react-router-dom";
 const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const toggleLanguage = () => {
-    setCurrentLanguage(currentLanguage === "en" ? "ar" : "en");
+  // const toggleLanguage = () => {
+  //   setCurrentLanguage(currentLanguage === "en" ? "ar" : "en");
+  // };
+
+    const handleRoute = () => {
+navigate('/plant-layout')
   };
-
+  const handleLogoClick = () => {
+navigate('/')
+  };
   return (
     <>
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -26,9 +33,11 @@ const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
            <div className="flex items-center space-x-3">
   <div className="w-10 h-10 flex items-center justify-center">
     <img
+        onClick={handleLogoClick}
+
       src={institutionLogos?.[0]}
       alt="Institution Logo"
-      className="w-10 h-10 object-contain rounded-full"
+      className="w-10 h-10 object-contain "
     />
   </div>
   <div>
@@ -36,9 +45,16 @@ const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
     <p className="text-xs text-gray-500">Powering Progress</p>
   </div>
 </div>
+<div>
 
+  <p
+    onClick={handleRoute}
+    className="cursor-pointer text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200"
+  >
+    Plant Layout
+  </p></div>
             {/* Desktop Buttons */}
-            <div className="hidden md:flex items-center gap-4">
+            {/* <div className="hidden md:flex items-center gap-4">
               <Button
                 onClick={toggleLanguage}
                 variant="outline"
@@ -54,7 +70,7 @@ const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
                 <Edit className="w-4 h-4 mr-2" />
                 Update Timeline
               </Button>
-            </div>
+            </div> */}
 
             {/* Mobile menu button */}
             <button
@@ -85,7 +101,7 @@ const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t border-gray-200">
               <nav className="flex flex-col gap-3">
-                <Button
+                {/* <Button
                   onClick={toggleLanguage}
                   variant="outline"
                   className="flex items-center gap-2 w-full justify-center"
@@ -102,7 +118,7 @@ const Header = ({ currentLanguage, setCurrentLanguage,institutionLogos }) => {
                 >
                   <Edit className="w-4 h-4 mr-2" />
                   Update Timeline
-                </Button>
+                </Button> */}
               </nav>
             </div>
           )}
