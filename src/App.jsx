@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Modal from "./components/Modal";
 import PlantLayout from "./components/plant-layout/PlantLayout";
 import "./App.css";
+import timelineData from "./timelineData.json"; // remove this if using api for fetching
 
 const App = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -39,6 +40,7 @@ const App = () => {
       <Header
         currentLanguage={currentLanguage}
         setCurrentLanguage={setCurrentLanguage}
+        institutionLogos={timelineData.institutionLogos}
       />
 
       <Routes>

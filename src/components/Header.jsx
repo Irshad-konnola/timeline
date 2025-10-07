@@ -35,7 +35,7 @@ navigate('/')
     <img
         onClick={handleLogoClick}
 
-      src="/logo_1.png"
+      src={institutionLogos?.[0]}
       alt="Institution Logo"
       className="w-10 h-10 object-contain "
     />
